@@ -1,0 +1,120 @@
+<resources>
+
+    <string name="app_name">xbcx_library</string>
+
+    <string name="prompt_sdcard_unavailable">没有发现储存卡，语音、头像功能暂时不可用</string>
+    <string name="prompt_sdcard_full">储存卡空间已满，语音、头像功能暂时不可用</string>
+    <string name="prompt_record_fail">录音失败,可能没有麦克风</string>
+    
+    <string name="dialogmessage_logout">您的帐号已在其它地方登录</string>
+    <string name="dialogmessage_pwd_error">密码错误</string>
+    <string name="popup_connect_disconnect">网络不可用，与服务器连接中断</string>
+    <string name="popup_connect_will_connect">正在尝试重新连接......</string>
+    <string name="popup_connect_connecting">正在连接，请稍候......</string>
+    
+    <string name="toast_cannot_send_photo">不支持该格式类型!</string>
+    <string name="toast_no_camera">没有摄像头!</string>
+    <string name="toast_cannot_open_file">无法打开!</string>
+    <string name="toast_disconnect">网络中断!</string>
+    <string name="toast_please_fill_full">请填写完整信息</string>
+    <string name="toast_send_verify_fail">发送验证失败</string>
+    <string name="toast_cannot_add_friend">无法添加该好友</string>
+    <string name="toast_pass_verify_fail">通过验证失败</string>
+    <string name="toast_delete_friend_fail">删除好友失败</string>
+    <string name="toast_create_group_chat_fail">创建群组失败</string>
+    <string name="toast_add_group_chat_member_fail">添加群组成员失败</string>
+    <string name="toast_delete_group_fail_by_permission">你没有删除群的权限</string>
+    
+    <string name="pull_refresh">下拉刷新</string>
+    <string name="pull_refresh_refreshing">正在刷新…</string>
+    <string name="pull_refresh_last_update">最后更新:</string>
+    <string name="pull_refresh_release_refresh">松开即可刷新</string>
+    <string name="bottom_load_loading">正在加载…</string>
+    <string name="bottom_load_loadmore">加载更多</string>
+    <string name="bottom_load_nomore">没有更多数据</string>
+    <string name="bottom_load_fail">加载失败</string>
+    
+    <string name="dateformat_md">M月d日</string>
+    <string name="dateformat_ymd">y年M月d日</string>
+    <string name="dateformat_mdhm">MM月dd日 HH:mm</string>
+    
+    <string name="statusbar_single_contact_multimsg_notify">发来%1$d条消息</string>
+    <string name="statusbar_single_contact_voice_notify">%1$s发来一段语音</string>
+    <string name="statusbar_single_contact_text_notify">%1$s发来一条消息</string>
+    <string name="statusbar_multigroupnotify">%1$d个群发来%2$d条消息</string>
+    <string name="statusbar_multidiscussionnotify">%1$d个讨论组发来%2$d条消息</string>
+    <string name="statusbar_multi_contact_notify">%1$d个联系人发来%2$d条消息</string>
+    
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="back">返回</string>
+    <string name="sure">确认</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_fail">保存失败</string>
+    <string name="retry">重试</string>
+    <string name="more">更多</string>
+    <string name="search">搜索</string>
+    <string name="delete">删除</string>
+    <string name="refresh">刷新</string>
+    <string name="save">保存</string>
+    <string name="edit">编辑</string>
+    <string name="complete">完成</string>
+    <string name="send">发送</string>
+    <string name="today">今日</string>
+    <string name="connecting">连接中…</string>
+    <string name="disconnect">未连接</string>
+    <string name="logining">正在登录…</string>
+    <string name="photo">照片</string>
+    <string name="screen">视频</string>
+    <string name="file">文件</string>
+    <string name="photograph">拍照</string>
+    <string name="voice">语音</string>
+    <string name="picture">图片</string>
+    <string name="video">视频</string>
+    <string name="choose_from_albums">从相册选择</string>
+    <string name="shoot_video">拍摄视频</string>
+    <string name="delete_record">删除记录</string>
+    <string name="receiving">接收中</string>
+    <string name="sending">发送中</string>
+    <string name="file_size">文件大小</string>
+    <string name="msg_receive_fail">传输中断，请重试</string>
+    <string name="receive">接收</string>
+    <string name="deletemessage">删除消息</string>
+    <string name="copymessage">复制消息</string>
+    <string name="invite">邀请</string>
+    <string name="you">你</string>
+    <string name="setup">设置</string>
+    <string name="avatar">头像</string>
+    <string name="send_message">发送消息</string>
+    <string name="delete_friend">删除好友</string>
+    <string name="delete_group">删除群</string>
+    <string name="quit_group">退出群</string>
+    <string name="people">人</string>
+    <string name="location">位置</string>
+    
+    <string name="addressbooks_search_friend">搜索好友…</string>
+    
+    <string name="friend_verify_notice">好友验证通知</string>
+    <string name="apply_add_you_friend">%1$s请求添加你为好友</string>
+    
+    <string name="add_you_friend">%1$s添加你为好友</string>
+    <string name="add_friend_confirm">对方通过你的信息验证，并加你为好友</string>
+    
+    <string name="groups">群组</string>
+    <string name="group_member">群成员</string>
+    <string name="group_prompt_you_invite">你邀请</string>
+    <string name="group_prompt_invite_you">邀请你</string>
+    <string name="group_prompt_added_group">加入了群聊</string>
+    <string name="group_prompt_removed_group">%1$s已解散了群聊</string>
+    <string name="group_prompt_quited_group">%1$s退出了群聊</string>
+    <string name="group_prompt_you_changed_group_name">你修改了群名</string>
+    <string name="group_prompt_changed_group_name">修改了群名</string>
+    <string name="group_prompt_you_been_removed">你已被%1$s移出了群，无法再进行群聊</string>
+    <string name="group_prompt_you_had">你将</string>
+    <string name="group_prompt_had">将</string>
+    <string name="group_prompt_removed_member">移除了群聊</string>
+    
+    <string name="friendask_apply_add_friend">请求添加你为好友</string>
+    <string name="friendask_nothandled">未处理</string>
+    <string name="friendask_added">已添加</string>
+</resources>

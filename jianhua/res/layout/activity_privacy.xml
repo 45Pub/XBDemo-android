@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/title"/>
+    <RelativeLayout
+        android:id="@+id/viewAllowAddFriend"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/content_frame"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/privacy_allow_other_add_friend" 
+            android:textColor="#1B1B1B" 
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/cbAllowAddFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" 
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/viewNeedVerify"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/content_frame"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/privacy_add_friend_need_verify" 
+            android:textColor="#1B1B1B" 
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/cbNeedVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" 
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

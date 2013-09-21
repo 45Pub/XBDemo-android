@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:id="@+id/viewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/search_input"
+                android:hint="@string/org_input_departmember" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:paddingLeft="13dp"
+                android:src="@drawable/search_icon" />
+
+            <ImageView
+                android:id="@+id/ivClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/search_clear" 
+                android:paddingRight="13dp"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/btnSearch"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:background="@drawable/btn_search_android"
+            android:text="@string/search"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000" />
+
+        <ImageView
+            android:id="@+id/viewShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/multilevel_shadow"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+</LinearLayout>

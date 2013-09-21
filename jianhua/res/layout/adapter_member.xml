@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical">
+    <ImageView 
+        android:id="@+id/ivAvatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/app_name"
+        android:layout_marginLeft="5dp"/>
+    <TextView 
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/normal_black"
+        android:textSize="14sp"
+        android:textIsSelectable="false"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"/>
+
+    <CheckBox 
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     	android:layout_marginLeft="2dp"
+     	android:layout_marginRight="2dp"/>
+</LinearLayout>

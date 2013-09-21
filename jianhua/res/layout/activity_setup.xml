@@ -1,0 +1,366 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/content_frame"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/viewHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:text="@string/avatar"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/normal_text_size" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/detail_arrow_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/arrow" />
+
+                    <ImageView
+                        android:id="@+id/ivAvatar"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/detail_arrow_1"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C7C7C7" />
+
+                <LinearLayout
+                    android:id="@+id/viewName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="@string/setup_name"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/normal_text_size" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/gray"
+                        android:textIsSelectable="false"
+                        android:layout_marginRight="5dp" />
+                    
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:contentDescription="@string/app_name"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/arrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C7C7C7" />
+
+                <RelativeLayout
+                    android:id="@+id/viewDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:text="@string/setup_sign"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/normal_text_size" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/arrowSign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/arrow" />
+
+                    <TextView
+                        android:id="@+id/tvSign"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@id/arrowSign"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/gray"
+                        android:textIsSelectable="false" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C7C7C7" />
+
+                <RelativeLayout
+                    android:id="@+id/viewCPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:text="@string/setup_cellphone"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/normal_text_size" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/detail_arrow_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/arrow" />
+
+                    <TextView
+                        android:id="@+id/tvCPhone"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@id/detail_arrow_4"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/gray"
+                        android:textIsSelectable="false" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C7C7C7" />
+                
+                <RelativeLayout
+                    android:id="@+id/viewTel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:text="@string/setup_tel"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/normal_text_size" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/detail_arrow_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/arrow" />
+
+                    <TextView
+                        android:id="@+id/tvTel"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@id/detail_arrow_11"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/gray"
+                        android:textIsSelectable="false" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C7C7C7" />
+
+                <RelativeLayout
+                    android:id="@+id/viewEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:text="@string/setup_email"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/normal_text_size" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/detail_arrow_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/arrow" />
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@id/detail_arrow_5"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/gray"
+                        android:textIsSelectable="false" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:id="@+id/viewPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/content_frame"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="@string/setup_privacy"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/normal_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/detail_arrow_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewClearMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/content_frame"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="@string/setup_clear"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/normal_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btn_red"
+                android:text="@string/setup_exit"
+                android:textColor="#ffffff" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

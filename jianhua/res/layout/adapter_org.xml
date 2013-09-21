@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewBack"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/multilevel_bg_right"
+    android:gravity="center_vertical"
+    android:minHeight="46dp"
+    android:orientation="horizontal" >
+    
+    <CheckBox 
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"/>
+    
+    <ImageView 
+        android:id="@+id/ivTriangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/multilevel_triangle"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/normal_black"
+        android:textIsSelectable="false"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/ivInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/list_btn_info" />
+
+</LinearLayout>
